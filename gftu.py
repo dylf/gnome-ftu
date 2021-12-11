@@ -36,10 +36,10 @@ for p in platforms:
 # Check on where theme exists
 orig = ""
 print("\nChecking to see where the theme dir is...")
-home = os.path.isdir(homedir+"/.local/share/themes/"+theme)
+home = os.path.isdir(homedir+"/.themes/"+theme)
 print("HOME: ", home)
 if home == True:
-    orig = homedir+"/.local/share/themes/"+theme
+    orig = homedir+"/.themes/"+theme
 else:
     system = os.path.isdir("/usr/share/themes/"+theme)
     print("SYSTEM: ", system)
